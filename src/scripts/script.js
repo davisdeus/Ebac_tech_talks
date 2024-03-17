@@ -1,6 +1,6 @@
 AOS.init();
 
-const dateFuture = new Date('dec 15,2024 19:00:00');
+const dateFuture = new Date('oct 15,2024 19:00:00');
 const timeStampEvent = dateFuture.getTime();
 
 const countingTheHours = setInterval(function () {
