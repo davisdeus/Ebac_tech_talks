@@ -14,17 +14,17 @@ const countingTheHours = setInterval(function () {
     const minutesIsMs = 1000 * 60;
     const secondsIsMs = 1000;
 
-    const daysToEent = Math.floor(timeToEvent / dayIsMs);
+    const daysToEvent = Math.floor(timeToEvent / dayIsMs);
     const hoursToEvent = Math.floor((timeToEvent % dayIsMs) / hoursIsMs);
     const minutesToEvent = Math.floor((timeToEvent % hoursIsMs) / minutesIsMs);
     const secondsToEvent = Math.floor((timeToEvent % minutesIsMs) / secondsIsMs);
 
-    console.log(daysToEent);
+    console.log(daysToEvent);
     console.log(hoursToEvent);
     console.log(minutesToEvent);
     console.log(secondsToEvent);
 
-    document.getElementById('contador').innerHTML = `${daysToEent}D ${hoursToEvent}H ${minutesToEvent}M ${secondsToEvent}S`
+    document.getElementById('contador').innerHTML = `${daysToEvent}D ${hoursToEvent}H ${minutesToEvent}M ${secondsToEvent}S`
 
     if (timeToEvent < 0) {
         clearInterval(countingTheHours);
